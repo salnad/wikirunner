@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "WikiGraph",
+  "version": "0.1",
+  "permissions": ["storage", "activeTab", "tabs", "<all_urls>"],
+  "background" : {
+    "scripts": ["jquery-3.5.0.slim.min.js", "background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["jquery-3.5.0.slim.min.js", "indivpageopen.js"]
+  }],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

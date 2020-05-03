@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "WikiGraph",
+    "version": "0.1",
+    "permissions": ["storage", "declarativeContent", "activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "page_action": {
+      "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+}
