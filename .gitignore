@@ -1,1 +1,11 @@
 enwiki-latest-pages-articles.xml.bz2
+api/__pycache__
+api/drivers/*
+chrome-extension/.DS_Store
+chrome-extension/jquery-3.5.0.slim.min.js
+*.zip
+*.bz2
+*.json
+*.DS_Store
+explore/partitioned-data
+explore/json-data
