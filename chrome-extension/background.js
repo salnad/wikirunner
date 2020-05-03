@@ -1,6 +1,8 @@
-chrome.runtime.onMessage.addListener(
+// RECIEVE MESSAGE FROM POPUP -> LOADS DATA INTO LOCAL STORAGE -> SENDS FIRST MESSAGE TO CONTENT
+chrome.runtime.onMessage.addListener(    
     function(request, sender, sendResponse) {
         console.log(request.message);
+        console.log(request.path);
         chrome.storage.local.set({'list': request.path}, function() {
             chrome.storage.local.set({'curr_pos': 0}, function() {
                 sendResponse({message: "succesfully loaded pages (from background xoxo)"});
@@ -15,6 +17,7 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
+// UPDATES WHENEVER NEW TAB CREATED & THAT TAB IS UPDATED (hacky, need to make more secure) -> SENDS MESSAGE TO CONTENT SCRIPT
 chrome.tabs.onCreated.addListener(function(cr_tab){
     chrome.tabs.onUpdated.addListener(function (up_tabId, up_changeInfo, up_tab) {
         console.log("something was created!");

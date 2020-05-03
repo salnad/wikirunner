@@ -1,6 +1,8 @@
 popup - get user input (ending page)
--> send information to background 
+-> gets list from api
+-> sends list in a message to background script
 
 background
+-> send list message 
 
 content_script
