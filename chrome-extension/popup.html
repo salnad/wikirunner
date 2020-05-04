@@ -1,10 +1,108 @@
 <!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        body {
+            height: 300px;
+            width: 300px;
+        }
+        input {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            font-weight: bold;
+            font-size: 150%;
+        }
+        button {
+            width: 30%;
+            background-color: rgb(29, 24, 24);
+            color: white;
+            padding: 10px 0px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 130%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h3 {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 0.5px solid rgb(155, 149, 149);
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            font-weight: bold;
+            font-size: 150%;
+            background-color: #ddd;
+        }
+
+        h3.inactive {
+            color: rgb(0, 0, 0);
+        }
+
+        h3.failed {
+            color: rgb(245, 45, 19);
+        }
+
+        h3.loading {
+            color: rgb(250, 160, 25);
+        }
+
+        h3.success {
+            color: rgb(49, 179, 37);
+        }
+
+        ul {
+            list-style: none;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-evenly; 
+            align-items: center;
+            padding:0%;
+        }
+
+        li {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 2px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 150%;
+            background-color: #ddd;
+        }
+
+
+    </style>
+</head>
+
 <html>
     <body>
-        <input id="start-page" placeholder="starting page"></input>
-        <input id="end-page" placeholder="ending page"></input>
-        <button id = "click-start">click</button>
-        <h4 id = "status">NO REQUESTS</h4>
+        <div style = "display: flex; justify-content: space-between; align-items: center;">
+            <input id="start-page" placeholder="start"></input>
+            <h2 style="margin: 0px; text-align: center;">to</h2>
+            <input id="end-page" placeholder="end"></input>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <button id = "click-start">Find Path</button>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <h3 class = "inactive" id = "status">NO REQUESTS</h3>
+        </div>
+        <ul id = "clicked_links"></ul>
+
+        <script src="jquery-3.5.0.slim.min.js"></script>
         <script src = "popup.js"></script>
     </body>
 </html>

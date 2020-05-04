@@ -14,7 +14,6 @@ def get_path(start_point, end_point):
     start_point = start_point.replace(' ', '+')
     end_point = end_point.replace(' ', '+')
     url = f'https://degreesofwikipedia.com/?a1={start_point}&linktype=1&a2={end_point}&skips=&allowsideboxes=1&allowyears=1&submit=1588518849%7C0bf85377469ee6e2efddbabe55a60f8a&currentlang=en'
-    print(url)
 
     driver.get(url)
 
