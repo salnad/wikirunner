@@ -16,7 +16,9 @@ Our API currently works by using selenium / beautifulsoup to make a request to a
 In the future we hope to host our API on a webserver (using proper use of auth tokens) to allow users to use WikiRunners chrome extension without running the API locally. We also plan to use DBPedia's dump of parsed wikipedia links and graph traversal algorithms used like in this project (https://www.sixdegreesofwikipedia.com/) to calculate paths ourselves.
 
 ### Chrome Extension
-Our chrome extension can be installed by going to chrome://extensions/ in Chrome, turning developer mode on, and adding the chrome-extension directory as a chrome extension. To use the extension in game or on wikipedia, ensure you are on the starting page, and type the starting page name and the ending page name and hit Find Path to generate a path and automatically traverse that path.
+Our chrome extension can be installed by doing the following:
+1. Go to chrome://extensions/ in Chrome, turning developer mode on, and adding the chrome-extension directory as a chrome extension. 
+2. To use the extension in game or on wikipedia, ensure you are on the starting page, and type the starting page name and the ending page name and hit Find Path to generate a path and automatically traverse that path.
 
 The Chrome Extension can be broken down into a few different components: popup.js/background.js. Specifics can be seen in the code but the general idea is that the popup.js calls our flask application to get the necessary path and sends the data to background.js for storage. Another js scripts focuses on opening each of the links and sending the appropiate messages to our console.
 
