@@ -1,4 +1,4 @@
-# WikiRunner
+# 🏁 WikiRunner 🏁
 A chrome extension built to help you beat the Wikipedia Game (works for embedded wikipedia page based games like https://www.thewikigame.com/group or on the actual website.
 
 ## How it Works
