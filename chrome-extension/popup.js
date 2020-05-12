@@ -9,6 +9,7 @@ function draw_clicked(elements, num) {
         }
     } 
 }
+
 // draw_clicked(["Minecraft", "Ray tracing (graphics)", "Light", "Purple"],4);
 
 function auto_play() {
