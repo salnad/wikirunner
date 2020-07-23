@@ -13,7 +13,7 @@ Our API is created using a flask application that accepts GET requests (with a s
 
 Our API currently works by using selenium / beautifulsoup to make a request to another persons website (https://degreesofwikipedia.com/) and returns their computed answer.
 
-In the future we hope to host our API on a webserver (using proper use of auth tokens) to allow users to use WikiRunners chrome extension without running the API locally. We also plan to use DBPedia's dump of parsed wikipedia links and graph traversal algorithms used like in this project (https://www.sixdegreesofwikipedia.com/) to calculate paths ourselves.
+In the future we hope to host our API on a webserver (using proper use of auth tokens) to allow users to use WikiRunners chrome extension without running the API locally. We also plan to use DBPedia's dump of parsed wikipedia links and graph traversal algorithms used like in this project (https://www.sixdegreesofwikipedia.com/) to calculate paths ourselves (WORK IN PROGRESS).
 
 ### Chrome Extension
 Our chrome extension can be installed by doing the following:
