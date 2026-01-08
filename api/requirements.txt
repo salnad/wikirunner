@@ -20,5 +20,5 @@ six==1.14.0
 soupsieve==2.0
 tqdm==4.46.0
 urllib3==1.25.9
-Werkzeug==1.0.1
+Werkzeug==3.1.5
 wikipedia2vec==1.0.4
